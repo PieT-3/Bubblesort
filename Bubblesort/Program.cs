@@ -43,11 +43,11 @@ namespace Bubblesort
                 Console.Write(testArray[i] + ", ");
             }
 
-            foreach (int wert in testArray)
-            {
-                Console.Write(wert + ", ");
-            }
-            Console.WriteLine("\n");
+            //foreach (int wert in testArray)
+            //{
+            //    Console.Write(wert + ", ");
+            //}
+            //Console.WriteLine("\n");
 
         }
     }
