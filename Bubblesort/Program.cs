@@ -8,11 +8,22 @@ namespace Bubblesort
 {
     class Program
     {
+        /*
+         * Programmname: Test Bubblesort
+         * Autor: Tabea Pieper
+         * 
+         * Aufgabenstellung eines Kollegen:
+         * Schreibe ein Programm in dem die Zahlen eines Arrays der größe nach sortiert werden.
+         * Dabei darf keine Methode und kein Hilfsarray genutzt werden.
+         * 
+         */
+
         static void Main(string[] args)
         {
+            // Testarray erstellen
             int[] testArray = { 9, 3, 19, 2, 31, 25, 45, 1 };
 
-            //Ausgabe unsortiert
+            // Ausgabe Array unsortiert
             Console.WriteLine("Ausgabe Array unsortiert:");
             for (int i = 0; i < testArray.Length; i++)
             {
@@ -20,7 +31,10 @@ namespace Bubblesort
             }
 
 
-            // Vergleiche i mit i + 1
+            /* Jeder Index wird mit dem nächsten Index des Arrays verglichen.
+             * Ist der Vorherige größer, so werden die Positionen getauscht.
+             * Die Überprüfung aller Indizes wird so oft wiederholt, wie das Array lang ist.
+             */
             for (int j = 0; j < testArray.Length; j++)
             {
                 for (int i = 0; i < testArray.Length - 1; i++)
@@ -36,12 +50,16 @@ namespace Bubblesort
                 }
             }
 
+            // Ausgabe Array sortiert
             Console.WriteLine("\nAusgabe Array sortiert:");
             // Ausgabe sortiert
             for (int i = 0; i < testArray.Length; i++)
             {
                 Console.Write(testArray[i] + ", ");
             }
+
+
+            // Andere Möglichkeit alle Elemente eines Arrays auszugeben
 
             //foreach (int wert in testArray)
             //{
